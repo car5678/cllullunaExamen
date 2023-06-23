@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cllullunaExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login" FontSize="20" HorizontalTextAlignment="Center" />
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+
+                </Grid.ColumnDefinitions>
+                <Label Text="usuario" FontSize="20" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" />
+                <Label Text="Contraseña" FontSize="20" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                
+                <Entry x:Name="txtuser" Placeholder="Ingrese el usuario" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="txtcontrse" Placeholder="Contraseña" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Button x:Name="btningresar" Text="Iniciar sesión"  Grid.Row="4" Grid.Column="0" Clicked="btningresar_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

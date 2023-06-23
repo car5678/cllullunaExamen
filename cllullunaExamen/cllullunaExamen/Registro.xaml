@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cllullunaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro" FontSize="20" HorizontalTextAlignment="Center" />
+            <Label  x:Name="lblusur" HorizontalTextAlignment="Center" TextColor="red" FontSize="16" />
+            <Entry x:Name="txtdatos" Placeholder="dato" Keyboard="Numeric" TextChanged="txtdatos_TextChanged"/>
+           
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lfecha" Text="Fecha" Grid.Row="1" Grid.Column="1" />
+                <DatePicker Date="2023-06-22" x:Name="dfecha"  Grid.Row="1" Grid.Column="1"/>
+
+                <Label x:Name="dpais" Text="Pais" Grid.Row="2" Grid.Column="1" />
+                <Picker Title="Pais" x:Name="pkpais" Grid.Row="3" Grid.Column="1">
+
+                    <Picker.Items>
+
+                        <x:String>Ecuador</x:String>
+                        <x:String>Clile</x:String>
+                        <x:String>Peru</x:String>
+
+                    </Picker.Items>
+                </Picker>
+
+                <Label x:Name="lciudad" Text="Ciudad" Grid.Row="4" Grid.Column="1" />
+                    
+                    <Picker Title="Ciudad" x:Name="pkciudad">
+
+                        <Picker.Items>
+
+                            <x:String>cuenca</x:String>
+                            <x:String>quito</x:String>
+                            <x:String>guayaquil</x:String>
+
+                        </Picker.Items>
+
+                    </Picker>
+
+                <Entry x:Name="txtmonto" Placeholder="Pago" Grid.Row="5" Grid.Column="1" />
+                <Entry x:Name="txtmensual" Placeholder="Mensual" Grid.Row="5" Grid.Column="2" />
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                  
+
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="dnombre" Text="Nombre" Grid.Row="0" Grid.Column="0" />
+                
+                <Label x:Name="dapellido" Text="Apellido" Grid.Row="1" Grid.Column="1" />
+                
+                <Label x:Name="dedad" Text="Edad" Grid.Row="2" Grid.Column="1 " />
+                
+                <Entry x:Name="txtnombre" Placeholder="Ingresar Nombre" Grid.Row="3" Grid.Column="1"  />
+                
+                
+                <Entry x:Name="txtapellido" Placeholder="Ingresa tu apellido" Grid.Row="3" Grid.Column="2" />
+
+                
+                <Entry x:Name="txtedad" Placeholder="Ingresar tu edad" Grid.Row="3" Grid.Column="2" />
+
+
+
+
+            </Grid>
+
+            <Button x:Name="btnresumen" Text="Ver Resumen" Clicked="btnresumen_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
